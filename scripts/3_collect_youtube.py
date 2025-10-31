@@ -80,7 +80,7 @@ api_key = os.getenv('YOUTUBE_API_KEY')
 if not api_key or api_key == 'YOUR_YOUTUBE_API_KEY_HERE':
     print("❌ ERROR: YOUTUBE_API_KEY not set or still has placeholder value!")
     print("\nEdit .env and replace with your actual API key:")
-    print("  YOUTUBE_API_KEY=AIzaSyXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+    print("  YOUTUBE_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
     print("\nGet API key from:")
     print("  1. Go to https://console.cloud.google.com/")
     print("  2. Select your project")
