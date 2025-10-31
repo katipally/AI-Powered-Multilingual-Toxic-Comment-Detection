@@ -1,0 +1,41 @@
+{
+  "processing_date": "2025-10-30T22:00:43.891578",
+  "total_labeled_samples": 198603,
+  "total_unlabeled_samples": 20072,
+  "total_samples": 218675,
+  "labeled_by_source": {
+    "jigsaw_unintended_bias": 100000,
+    "textdetox": 71374,
+    "hatexplain": 19229,
+    "jigsaw_multilingual": 8000
+  },
+  "unlabeled_by_source": {
+    "youtube": 10072,
+    "reddit": 10000
+  },
+  "label_distribution": {
+    "0": 143536,
+    "1": 55067
+  },
+  "language_distribution": {
+    "en": 124229,
+    "hi": 9363,
+    "es": 7500,
+    "it": 7500,
+    "ru": 5000,
+    "uk": 5000,
+    "de": 5000,
+    "am": 5000,
+    "zh": 5000,
+    "ar": 5000,
+    "fr": 5000,
+    "tt": 5000,
+    "ja": 5000,
+    "tr": 3000,
+    "he": 2011
+  },
+  "code_mixed_counts": {
+    "reddit": 927,
+    "youtube": 942
+  }
+}

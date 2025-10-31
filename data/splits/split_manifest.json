@@ -1,0 +1,60 @@
+{
+  "creation_date": "2025-10-30T22:30:32.317655",
+  "random_seed": 42,
+  "total_samples": 198603,
+  "splits": {
+    "train": {
+      "file": "train.csv",
+      "samples": 139022,
+      "toxic_count": 38547,
+      "toxic_pct": 27.727266188085338,
+      "languages": {
+        "en": 86960,
+        "hi": 6554,
+        "es": 5266,
+        "it": 5264,
+        "am": 3548
+      },
+      "code_mixed": 0
+    },
+    "dev": {
+      "file": "dev.csv",
+      "samples": 29790,
+      "toxic_count": 8259,
+      "toxic_pct": 27.72406847935549,
+      "languages": {
+        "en": 18634,
+        "hi": 1405,
+        "es": 1122,
+        "it": 1112,
+        "uk": 788
+      },
+      "code_mixed": 0
+    },
+    "test": {
+      "file": "test.csv",
+      "samples": 29791,
+      "toxic_count": 8261,
+      "toxic_pct": 27.729851297371688,
+      "languages": {
+        "en": 18635,
+        "hi": 1404,
+        "it": 1124,
+        "es": 1112,
+        "tt": 803
+      },
+      "code_mixed": 0
+    }
+  },
+  "stratification": {
+    "method": "sklearn.model_selection.train_test_split",
+    "stratify_by": "label_x_language_group_x_code_mixed",
+    "reproducible": true
+  },
+  "source_datasets": [
+    "jigsaw_unintended_bias",
+    "textdetox",
+    "hatexplain",
+    "jigsaw_multilingual"
+  ]
+}
