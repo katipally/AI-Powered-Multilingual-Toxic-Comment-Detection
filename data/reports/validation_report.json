@@ -1,0 +1,54 @@
+{
+  "labeled": {
+    "dataset": "labeled_data",
+    "validation_date": "2025-10-30T22:01:16.846285",
+    "total_samples": 198603,
+    "columns": [
+      "id",
+      "text",
+      "label",
+      "source",
+      "language",
+      "split",
+      "code_mixed",
+      "metadata"
+    ],
+    "checks": {
+      "schema": true,
+      "nulls": true,
+      "text_quality": true,
+      "duplicates": true,
+      "labels": true,
+      "language": true,
+      "code_mixed": true,
+      "metadata": true
+    },
+    "all_checks_passed": true
+  },
+  "unlabeled": {
+    "dataset": "unlabeled_data",
+    "validation_date": "2025-10-30T22:01:17.006560",
+    "total_samples": 20072,
+    "columns": [
+      "id",
+      "text",
+      "label",
+      "source",
+      "language",
+      "split",
+      "code_mixed",
+      "metadata"
+    ],
+    "checks": {
+      "schema": true,
+      "nulls": true,
+      "text_quality": true,
+      "duplicates": true,
+      "labels": true,
+      "language": true,
+      "code_mixed": true,
+      "metadata": true
+    },
+    "all_checks_passed": true
+  }
+}
