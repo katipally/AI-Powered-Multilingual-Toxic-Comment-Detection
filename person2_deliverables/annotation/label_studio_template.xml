@@ -1,0 +1,44 @@
+<View>
+  <Header value="Toxic Comment Detection"/>
+  
+  <!-- Binary Toxicity Classification -->
+  <Text name="text" value="$text"/>
+  
+  <Choices name="toxicity" toName="text" required="true">
+    <Choice value="non-toxic" alias="0"/>
+    <Choice value="toxic" alias="1"/>
+  </Choices>
+  
+  <!-- Multi-label Subtypes (shown only if toxic selected) -->
+  <View visibleWhen="choice-selected" whenChoiceValue="toxic">
+    <Header value="Toxicity Subtypes (select all that apply)"/>
+    <Choices name="toxic_types" toName="text" multiple="true">
+      <Choice value="hate" alias="hate"/>
+      <Choice value="threat" alias="threat"/>
+      <Choice value="insult" alias="insult"/>
+      <Choice value="harassment" alias="harassment"/>
+      <Choice value="self_harm" alias="self_harm"/>
+    </Choices>
+  </View>
+  
+  <!-- Optional: Rationale spans (highlight toxic phrases) -->
+  <View visibleWhen="choice-selected" whenChoiceValue="toxic">
+    <Header value="Highlight toxic phrases (optional)"/>
+    <Labels name="rationale" toName="text">
+      <Label value="toxic-phrase" background="red"/>
+    </Labels>
+  </View>
+  
+  <!-- Confidence level -->
+  <Choices name="confidence" toName="text" required="true">
+    <Choice value="high" alias="high"/>
+    <Choice value="medium" alias="medium"/>
+    <Choice value="low" alias="low"/>
+  </Choices>
+  
+  <!-- Notes (optional) -->
+  <TextArea name="notes" toName="text" 
+            placeholder="Optional: Add notes about edge cases or context"
+            editable="true"/>
+</View>
+

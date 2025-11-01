@@ -1,0 +1,22 @@
+{
+  "creation_date": "2025-10-31T11:37:45.717860",
+  "total_samples": 1000,
+  "code_mixed_count": 500,
+  "sources": {
+    "reddit": 501,
+    "youtube": 499
+  },
+  "languages": {
+    "en": 586,
+    "id": 164,
+    "so": 56,
+    "sw": 43,
+    "et": 19,
+    "tl": 17,
+    "af": 14,
+    "sk": 13,
+    "nl": 13,
+    "hi": 11
+  },
+  "random_seed": 42
+}
